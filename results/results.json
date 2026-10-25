@@ -1,0 +1,132 @@
+{
+  "data": {
+    "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip",
+    "sha256": "d0c1083db615c0c6a3c6a33a3c64e15716794816fc0ed08e1cbd44e5819fe7f1",
+    "first_day": "2016-01-04",
+    "last_day": "2026-10-23",
+    "days": 2768
+  },
+  "baseline": {
+    "max_abs_cycle_log_sum_mid": 1.0547118733938987e-15,
+    "best_cycle_return_bps_with_spread": -1.4999250012426302
+  },
+  "stale_data": [
+    {
+      "stale_prob": 0.0,
+      "days": 2768,
+      "signals": 0,
+      "executable_after_guard": 0,
+      "median_best_bps": -1.4999250012426302,
+      "max_best_bps": -1.4999250012337484
+    },
+    {
+      "stale_prob": 0.02,
+      "days": 2768,
+      "signals": 1087,
+      "executable_after_guard": 0,
+      "median_best_bps": -1.4999250012426302,
+      "max_best_bps": 566.6372883966563
+    },
+    {
+      "stale_prob": 0.05,
+      "days": 2768,
+      "signals": 2013,
+      "executable_after_guard": 0,
+      "median_best_bps": 39.149847525278275,
+      "max_best_bps": 474.3043140356207
+    },
+    {
+      "stale_prob": 0.1,
+      "days": 2768,
+      "signals": 2547,
+      "executable_after_guard": 0,
+      "median_best_bps": 74.15535294682418,
+      "max_best_bps": 706.2257961007967
+    },
+    {
+      "stale_prob": 0.2,
+      "days": 2768,
+      "signals": 2755,
+      "executable_after_guard": 0,
+      "median_best_bps": 108.753493585374,
+      "max_best_bps": 765.8268249405164
+    }
+  ],
+  "solvers": {
+    "instances": 100,
+    "sa_sweeps": 1000,
+    "sb_steps": 6000,
+    "variables": {
+      "A": 112,
+      "B": 56
+    },
+    "methods": {
+      "bellman_ford": {
+        "optimal": 0,
+        "feasible": 100,
+        "profitable": 100,
+        "seconds": 0.018025492999981907,
+        "optimal_rate": 0.0,
+        "profitable_rate": 1.0,
+        "median_regret_bps": null,
+        "feasible_rate": 1.0,
+        "ms_per_instance": 0.18025492999981907
+      },
+      "A_readoff": {
+        "optimal": 100,
+        "feasible": 100,
+        "profitable": 100,
+        "seconds": 0.002777600000513303,
+        "optimal_rate": 1.0,
+        "profitable_rate": 1.0,
+        "median_regret_bps": 0.0,
+        "feasible_rate": 1.0,
+        "ms_per_instance": 0.027776000005133028
+      },
+      "A_SA": {
+        "optimal": 30,
+        "feasible": 100,
+        "profitable": 90,
+        "seconds": 34.39300478100074,
+        "optimal_rate": 0.3,
+        "profitable_rate": 0.9,
+        "median_regret_bps": 0.2533758836763267,
+        "feasible_rate": 1.0,
+        "ms_per_instance": 343.9300478100074
+      },
+      "A_SB": {
+        "optimal": 63,
+        "feasible": 83,
+        "profitable": 83,
+        "seconds": 49.12330605000079,
+        "optimal_rate": 0.63,
+        "profitable_rate": 0.83,
+        "median_regret_bps": 0.0,
+        "feasible_rate": 0.83,
+        "ms_per_instance": 491.2330605000079
+      },
+      "B_SA": {
+        "optimal": 1,
+        "feasible": 89,
+        "profitable": 15,
+        "seconds": 18.259904358000085,
+        "optimal_rate": 0.01,
+        "profitable_rate": 0.15,
+        "median_regret_bps": 6.5000305173566755,
+        "feasible_rate": 0.89,
+        "ms_per_instance": 182.59904358000088
+      },
+      "B_SB": {
+        "optimal": 100,
+        "feasible": 100,
+        "profitable": 100,
+        "seconds": 21.94590950600002,
+        "optimal_rate": 1.0,
+        "profitable_rate": 1.0,
+        "median_regret_bps": 0.0,
+        "feasible_rate": 1.0,
+        "ms_per_instance": 219.4590950600002
+      }
+    }
+  }
+}
